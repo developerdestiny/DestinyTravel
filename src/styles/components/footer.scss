@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.footer-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    font-size: 15px;
+    font-weight: 700;
+
+    &:first-child {
+      font-size: 20px;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid $grey-light;
+    }
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 300;
+    color: $grey-text;
+  }
+
+  .footer-itemContactNumber {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer-second {
+  width: 100%;
+  border-top: 1px solid $grey-light;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  font-size: 13px;
+  color: $grey-text;
+
+  div {
+    width: 50%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  h1 {
+    font-size: 15px;
+    color: $blue-text;
+  }
+
+  i {
+    width: 30px;
+    height: 30px;
+    background-color: $primary;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+@include breakpoint('medium') {  
+  .footer-wrapper {
+    max-width: 1024px;
+    padding: 50px 0;
+  }
+
+  .footer-body {
+    flex-direction: row;
+  }
+
+  .footer-item {
+    width: calc(100%/4);
+  }
+  .footer-redes {
+    display: flex;
+    gap: 1rem;
+  }
+  .footer-second {
+    div:first-child {
+      justify-content: flex-start;
+    }
+
+    div:nth-child(2) {
+      align-items: center;
+      justify-content: flex-end;
+
+      i {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .footer-item {
+
+    h1 {
+      border-bottom: none !important;
+    }
+  }
+}

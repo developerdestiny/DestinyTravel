@@ -1,0 +1,25 @@
+{
+  "short_name": "GSTMTRAVEL",
+  "name": "Somos un Tour Operador Mayorista en Estados Unidos con producto negociado directamente sin intermediarios.",
+  "icons": [
+    {
+      "src": "gstm-imagotipo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "gstm-imagotipo.png",
+      "type": "image/png",
+      "sizes": "1200x1200"
+    },
+    {
+      "src": "gstm-imagotipo.png",
+      "type": "image/png",
+      "sizes": "1200x1200"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
